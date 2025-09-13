@@ -77,9 +77,80 @@ Compress           & 5.363130e+09 & 6.435756e+09 \\
     \item total operation count is \textbf{3.35664e+08}, and average latency is \textbf{3.35664e+08} cycles
     \item I would choose \textbf{Compress} because it has the highest latency and therefore will benifit the most from speedups.
     \item function Compress takes about 29\% of total latency, so the maximum possible speedup is 1/(1-0.29) = \textbf{1.4}
-    \item todo
+    \item Done
     \item critical path length is \textbf{5 operations}
     \item need two cycles for mult, 3 for add and 1 for shift, therefore lower bound is \textbf{3 cycles}
+
+    \end{enumerate}
+
+    \item \textbf{Refine}
+    \begin{enumerate}[label=\arabic*)]
+        \item 6.289572e+09 cycles
+        \item \begin{tabular}{|l|p{6cm}|p{3cm}|}
+\hline
+\textbf{Assembly} & \textbf{Annotation} & \textbf{Number of Executions $N$} \\
+\hline
+add x6, x7, x12 & LOOP1 index++ &  4000\\
+\hline
+mov x4, x9 & store input size & 4000 \\
+\hline
+mov x0, 0 & LOOP2 index++& 23976000 \\
+\hline
+mov w1, 0 & sum = 0 & 23976000 \\
+\hline
+ldrb    w3, [x4, x0]  & load Input byte & 167832000 \\
+\hline
+ldr w2, [x5, x0, lsl 2]  & load Coefficients\text{[i]}& 167832000 \\
+\hline
+add x0, x0, 1 & i++ & 167832000 \\
+\hline
+madd    w1, w3, w2, w1  & fused mult and add & 167832000\\
+\hline
+bne .L4 & branch back LOOP3 & 167832000 \\
+\hline
+lsr w1, w1, 8   & shift by 8 & 23976000 \\
+\hline
+strb w1, [x6], 1 & store to output, then ++ output pointer for next one& 23976000 \\
+\hline
+add x4, x4, 1 & X++ & 23976000 \\
+\hline
+cmp x7, x6 & LOOP2 condition check & 23976000 \\
+\hline
+bne .L7 & branch back LOOP2 & 23976000 \\
+\hline
+add x7, x7, x10 & ++ to output pointer & 4000\\
+\hline
+add x9, x9, x11 & ++ to input pointer & 4000 \\
+\hline
+cmp x7, x8 & LOOP1 condition check & 4000 \\
+\hline
+bne .L3 & branch back LOOP1 & 4000 \\
+\hline
+
+
+\end{tabular}
+
+        \item madd    w1, w3, w2, w1 is the computation command
+        \item Done
+        \item $N_{\text{instr}} = 1174848000$
+        \item \noindent $N_{\text{mem}} = 3.59640\times10^{8}$\\
+\noindent $N_{\text{non\_mem}} = 8.15208\times10^{8}$\\
+\noindent $T_{\text{filter\_h\_measured}} = 6.289572\times10^{9}\ \text{cycles}$\\
+\noindent $T_{\text{cycle\_mem}} \approx 1.63552\times10^{1}\ \text{cycles}$
+
+
+        \item $N_{\text{slow\_mem}} = 47976007$ \\
+                $N_{\text{fast\_mem}} = 311663993$
+        \item \noindent $T_{\text{filter\_h\_measured}}=\dfrac{N_{\text{non\_mem}}}{2}+N_{\text{fast\_mem}}+N_{\text{slow\_mem}}\,T_{\text{cycle\_slow\_mem}}$\\
+\noindent $T_{\text{cycle\_slow\_mem}}\approx 1.16106\times10^{2}\ \text{cycles}$
+
+    \end{enumerate}
+
+    \item \textbf{Coding}
+    \begin{enumerate}[label=\arabic*)]
+        \item Done
+        \item Done
+        \item cdc naive: 1711894ns, cdc rolling: 39424ns. The new function takes 97\% less time
 
     \end{enumerate}
 

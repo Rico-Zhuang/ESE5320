@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.5)  12 SEP 2025 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.5)  13 SEP 2025 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -324,7 +324,17 @@ Overfull \hbox (55.22438pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
-[2 <./3_3.png>] (./writeup2.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+[]\OT1/cmr/bx/n/12 Number of
+ []
+
+
+Overfull \hbox (68.92302pt too wide) in paragraph at lines 89--132
+[][] 
+ []
+
+[2 <./3_3.png>] [3] [4] (./writeup2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -333,18 +343,18 @@ Package rerunfilecheck Info: File `writeup2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9890 strings out of 476182
- 149908 string characters out of 5795596
- 1935975 words of memory out of 5000000
+ 9905 strings out of 476182
+ 150011 string characters out of 5795596
+ 1941975 words of memory out of 5000000
  31766 multiletter control sequences out of 15000+600000
  566525 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,12n,79p,303b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on writeup2.pdf (2 pages, 93984 bytes).
+ 75i,12n,79p,303b,702s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on writeup2.pdf (4 pages, 111127 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 35 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
