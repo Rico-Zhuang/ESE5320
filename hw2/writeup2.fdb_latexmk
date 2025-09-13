@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1757733741.87094 "/home/rico/00_workspace/00_hw/ESE5320/hw2/writeup2.tex" "writeup2.pdf" "writeup2" 1757733742.08775 0
+["pdflatex"] 1757741995.04824 "/home/rico/00_workspace/00_hw/ESE5320/hw2/writeup2.tex" "writeup2.pdf" "writeup2" 1757741995.26536 0
   "/etc/texmf/web2c/texmf.cnf" 1737777250.27448 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/rico/00_workspace/00_hw/ESE5320/hw2/writeup2.tex" 1757733741.69989 4755 53a98c473286f951751694d36cb3bbf8 ""
+  "/home/rico/00_workspace/00_hw/ESE5320/hw2/writeup2.tex" 1757741994.88039 4864 075d9072f54e202c5bbf9e2d783fb5c7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -82,9 +82,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757083921.99275 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757083934 6800794 227daaee111ea6f0884c6216a6ff268a ""
-  "writeup2.aux" 1757733742.05823 162 59504cb8f8bee0a3f0488d753cb23a1e "pdflatex"
-  "writeup2.out" 1757733742.04016 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "writeup2.tex" 1757733741.69989 4755 53a98c473286f951751694d36cb3bbf8 ""
+  "writeup2.aux" 1757741995.23639 162 59504cb8f8bee0a3f0488d753cb23a1e "pdflatex"
+  "writeup2.out" 1757741995.21798 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "writeup2.tex" 1757741994.88039 4864 075d9072f54e202c5bbf9e2d783fb5c7 ""
   (generated)
   "writeup2.aux"
   "writeup2.log"
