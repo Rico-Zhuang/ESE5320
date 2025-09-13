@@ -48,96 +48,38 @@
 
         \end{tabular}
         \begin{enumerate}[label=\arabic*)]
-        \item asdas
+        \item Done
+        \item Done
+        \item Done
 
-% \includegraphics[width=0.3\textwidth]{image2.png}
-
-
-% \includegraphics[width=0.2\textwidth]{image3.png}
-
-        \item \texttt{\&x[2].d[0]->b}
-        \item \begin{verbatim}
-#include <stdio.h>
-
-int main(void) {
-    int a[2][4] = { {10, 20, 30, 40}, {50, 60, 70, 80} };
-    int *row0 = a[0];
-    int *row1 = a[1];
-    int *rows[2] = { row0, row1 };
-    int **pp = rows;
-    for (int i = 0; i < 2; ++i) {
-        for (int j = 0; j < 4; ++j) {
-            printf("pp[%d][%d] = %d\n", i, j, pp[i][j]);
-        }
-    }
-    return 0;
-}
-\end{verbatim}
-% \includegraphics[width=0.3\textwidth]{image4.png}
-        \item \begin{verbatim}
-#include <stdio.h>
-#include <stdlib.h>
-
-void temp(int i) {
-    int a[2];
-    int b[3];
-    int *c;
-    int *d;
-
-    c = (int *)malloc(sizeof(int) * 4);
-    d = (int *)malloc(sizeof(int) * 5);
-
-    printf("a (stack, 2 ints) : %p\n", (void*)a);
-    printf("b (stack, 3 ints) : %p\n", (void*)b);
-    printf("c (heap, 4 ints)  : %p\n", (void*)c);
-    printf("d (heap, 5 ints)  : %p\n", (void*)d);
-
-    free(c);
-    free(d);
-
-    return;
-}
-
-int main(void) {
-    temp(0);
-    return 0;
-}
-
-        \end{verbatim}
 % \includegraphics[width=0.6\textwidth]{image5.png}
-
-        \item c[0] becomes 13 \\
-        invaild array indexing is detected and the program stops
-
-        \item char and unsigned char sums differ because unsigned char use all 8 bits for numbers but signed char has to use a bit for the sign, so they overflow at different sums
-        \\\\char and unsigned char sums differ from their 'intsum' because intsum can use 32bits but chars can only use 8 so they overflow after 255.
-
-        \item Preprocessor: Handles stuff like include and define before compiling 
-        \\compiler: Translates the preprocessed C code into assembly or machine code 
-        \\Linker: Combines object files and libraries into executable
-
-        \item add the include path to the makefile -I \\ copy the headerfile to local directory \\ check name and path to make sure that they are correct
-        \item object file missing \\ function not defined \\ function signature does not match
     \end{enumerate}
 
-    \item \textbf{Debug an Application}
+    \item \textbf{Analyze}
     \begin{enumerate}[label=\arabic*)]
-        \item Done
-        \item Done
-        \item Done
-        \item \begin{enumerate}[label=\arabic*)]
-        \item On line 5 I changed \texttt{"while (*s) s++;"} to \texttt{"while (*s++) l++;"}
-        \item Makefile: \begin{verbatim}
-release:
-	gcc -Wall -o program program.c
-
-debug:
-	gcc -g -Wall -o program program.c
-        \end{verbatim}
-        \item The secret message is: Well Done!!
-        \item while loop not executed at all, must be buggy len(). Steppting through len, l doesn't change at all. Look back at the code and noticed that s is incremented  in while loop but l is not. 
-        \end{enumerate}
-        \item the -g flag of gcc adds debug symbols that maps addresses back to source files, and is read by gdb
+        \item \begin{tabular}{|c|c|c|}
+\hline
+Functions & $T_{\text{measured\_avg}}$ (ns) & $T_{\text{measured\_avg}}$ (cycles @ 1.2\,GHz) \\
+\hline
+Scale             & 8.426840e+08 & 1.011221e+09 \\
+\hline
+Filter\_horizontal & 5.241310e+09 & 6.289572e+09 \\
+\hline
+Filter\_vertical   & 5.299610e+09 & 6.359532e+09 \\
+\hline
+Differentiate      & 1.632450e+09 & 1.958940e+09 \\
+\hline
+Compress           & 5.363130e+09 & 6.435756e+09 \\
+\hline
+\end{tabular}
+    \item The Scale funtion has the highest latency.
+    \item \includegraphics[width=1.0\textwidth]{3_3.png}
+    \item total operation count is \textbf{3.35664e+08}, and average latency is \textbf{3.35664e+08} cycles
+    \item I would choose \textbf{Compress} because it has the highest latency and therefore will benifit the most from speedups.
+    \item function Compress takes about 29\% of total latency, so the maximum possible speedup is 1/(1-0.29) = \textbf{1.4}
+    \item todo
+    \item critical path length is \textbf{5 operations}
+    \item need two cycles for mult, 3 for add and 1 for shift, therefore lower bound is \textbf{3 cycles}
 
     \end{enumerate}
 

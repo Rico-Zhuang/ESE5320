@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1757741995.04824 "/home/rico/00_workspace/00_hw/ESE5320/hw2/writeup2.tex" "writeup2.pdf" "writeup2" 1757741995.26536 0
+["pdflatex"] 1757744805.29336 "/home/rico/00_workspace/00_hw/ESE5320/hw2/writeup2.tex" "writeup2.pdf" "writeup2" 1757744805.54737 0
   "/etc/texmf/web2c/texmf.cnf" 1737777250.27448 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/rico/00_workspace/00_hw/ESE5320/hw2/writeup2.tex" 1757741994.88039 4864 075d9072f54e202c5bbf9e2d783fb5c7 ""
+  "/home/rico/00_workspace/00_hw/ESE5320/hw2/writeup2.tex" 1757744805.12601 3202 eff3ccd729ba34ddf687a6008092de1d ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -21,13 +21,11 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -82,9 +80,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757083921.99275 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757083934 6800794 227daaee111ea6f0884c6216a6ff268a ""
-  "writeup2.aux" 1757741995.23639 162 59504cb8f8bee0a3f0488d753cb23a1e "pdflatex"
-  "writeup2.out" 1757741995.21798 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "writeup2.tex" 1757741994.88039 4864 075d9072f54e202c5bbf9e2d783fb5c7 ""
+  "3_3.png" 1757743104.33175 34733 7eae9d52afc3fa9453bbff8d9606d364 ""
+  "writeup2.aux" 1757744805.51801 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "writeup2.out" 1757744805.46321 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "writeup2.tex" 1757744805.12601 3202 eff3ccd729ba34ddf687a6008092de1d ""
   (generated)
   "writeup2.aux"
   "writeup2.log"
