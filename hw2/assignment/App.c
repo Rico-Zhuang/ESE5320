@@ -77,9 +77,12 @@ int main()
   printf("Total latency of scale is: %.6f ns.\n", time_scale.latency());
   printf("Total latency of filter is: %.6f ns.\n", time_filter.latency());
   printf("Total latency of differentiate is: %.6f ns.\n", time_differ.latency());
-  printf("Total latency of compress is: %.6f ns.\n", time_compress.latency());
+  printf("Total latency of compress is: %.6f ns.\n\n", time_compress.latency());
 
   printf("Average latency of scale per loop iteration is: %.6f ns.\n", time_scale.avg_latency());
+  printf("Average latency of filter per loop iteration is: %.6f ns.\n", time_filter.avg_latency());
+  printf("Average latency of differentiate per loop iteration is: %.6f ns.\n", time_differ.avg_latency());
+  printf("Average latency of compress per loop iteration is: %.6f ns.\n", time_compress.avg_latency());
 
   for (int i = 0; i <= STAGES; i++)
     free(Data[i]);
